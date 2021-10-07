@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+$primary: #52796f;
+$color1: #cad2c5;
+@import "~bootstrap/scss/bootstrap.scss";
+.text-color1 {
+    color: $color1;
+}
+select,
+select:focus {
+    background-color: #354f52 !important;
+    border: 1px solid #84a98c !important;
+    color: $color1 !important;
+}
+body {
+    background-color: #2f3e46;
+}
+.video__element,
+.canvas__element {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 0.25rem;
+}
+.video__container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    margin-bottom: 1rem;
+}
+.video__container > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.none {
+    display: none;
+}
